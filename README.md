@@ -22,7 +22,7 @@ Big shout out to **Engineer Yasser** for his amazing course on YouTube 🙌
 |---------------|-------------------|
 | Backend       | Node.js, Express.js |
 | Authentication| JSON Web Tokens (JWT) |
-| Database      | MySQL             |
+| Database      | SQLite             |
 | API Type      | RESTful API       |
 
 ---
