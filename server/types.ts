@@ -43,7 +43,7 @@ export type ExpressHandler<Req, Res> = RequestHandler <
 >
 
 
-// TODO Mets what meaning of interface ?
+
 export interface JwtObject {
     userId: string
 }

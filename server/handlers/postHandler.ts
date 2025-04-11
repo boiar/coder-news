@@ -1,4 +1,4 @@
-import {db} from "../datastore";
+import {db} from "../datastore/DatabaseConnection";
 import crypto from "crypto";
 import {CreatePostRequest, CreatePostResponse, ListPostRequest, ListPostResponse} from "../api";
 import { Post, ExpressHandler } from "../types";

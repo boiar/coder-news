@@ -1,6 +1,6 @@
 import {Database, open as sqliteOpen} from "sqlite";
 import sqlite3 from "sqlite3";
-import {Datastore} from "../index";
+import {Datastore} from "../DatabaseConnection";
 import {Comment, Like, Post, User} from "../../types";
 import * as path from "path";
 

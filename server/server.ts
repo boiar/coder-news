@@ -1,5 +1,5 @@
 
-import {db, initDb} from './datastore';
+import {db, initDatabaseConnection} from './datastore/DatabaseConnection';
 
 import express, {ErrorRequestHandler, request, RequestHandler} from 'express';
 import {createPostHandler, listPostsHandler} from "./handlers/postHandler";
@@ -13,7 +13,7 @@ import {authMiddleware} from "./middleware/authMiddleware";
 (async () => {
 
 
-    await initDb();
+    await initDatabaseConnection();
     dotenv.config();
 
     const app = express();

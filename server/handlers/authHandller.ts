@@ -1,11 +1,12 @@
 // noinspection SpellCheckingInspection
 
 import { ExpressHandler } from "../types";
-import {SignInRequest, SignInResponse, SignUpRequest, SignUpResponse} from "../api";
+import {SignInRequest, SignUpRequest} from "../requests/authRequests";
+import {SignUpResponse, SignInResponse} from "../responses/authResponses";
 import {Post, User} from "../types";
 import crypto from "crypto";
-import {db} from "../datastore";
-import {signJwt} from "../auth";
+import {db} from "../datastore/DatabaseConnection";
+import {signJwt} from "../helpers/auth";
 
 export const signUpHandler: ExpressHandler<SignUpRequest, SignUpResponse> = async (req, res) => {
 
