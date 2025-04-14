@@ -9,17 +9,18 @@ import {requestLoggerMiddleware} from "./middleware/loggerMiddleware";
 import {errHandler} from "./middleware/errorMiddleware";
 import dotenv from 'dotenv';
 import {authMiddleware} from "./middleware/authMiddleware";
+import setupSwagger from "./swagger";
 
 (async () => {
 
 
-    await initDatabaseConnection();
+    /*await initDatabaseConnection();*/
     dotenv.config();
 
     const app = express();
     app.use(express.json());
 
-
+    setupSwagger(app);
 
 
     // log req for all Apis

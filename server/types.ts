@@ -43,7 +43,16 @@ export type ExpressHandler<Req, Res> = RequestHandler <
 >
 
 
-
 export interface JwtObject {
     userId: string
+}
+
+export interface LogData {
+    level?: 'info' | 'error' | 'warn';
+    method: string;
+    path: string;
+    requestBody: any;
+    responseBody: any;
+    statusCode: number;
+    date?: string;
 }

@@ -23,7 +23,7 @@ export const authMiddleware: ExpressHandler <any, any> = async (req, res, next) 
         const payload = verifyJwt(token[1]);
 
         //const user = await db.getUserById(payload.userId);
-        const user = await db.getUserById('c284ee5e-fa45-47bb-9e36-4e6e5faa632e');
+        const user = await db.getUserById(token[1]);
 
         if (!user) {
             throw 'not found';

@@ -13,6 +13,20 @@ Big shout out to **Engineer Yasser** for his amazing course on YouTube 🙌
 - ✅ Authenticated users can **Create**, **Read**, **Update**, and **Delete** posts
 - ✅ Simple and clean REST API structure
 - ✅ Built with real-world full-stack development practices
+- ✅ JWT-based authentication for secure API access
+- ✅ Centralized error handling with consistent responses
+- ✅ Request logging middleware for debugging and monitoring
+- ✅ Swagger documentation for easy API exploration and testing
+- ✅ Modular folder structure following best practices
+- ✅ Environment-based configuration using .env
+- ✅ Type-safe code using TypeScript
+- ✅ Handles duplicate user and post entries gracefully
+- ✅ Clear response messages and HTTP status codes
+- ✅ Built-in middleware for input validation and authorization
+- ✅ Lightweight SQLite integration for quick local development
+- ✅ Async/await syntax for clean asynchronous database queries
+
+
 
 ---
 
